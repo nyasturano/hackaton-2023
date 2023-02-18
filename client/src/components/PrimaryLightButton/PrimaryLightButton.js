@@ -1,8 +1,8 @@
 import './primaryLightButton.css';
 
-const PrimaryLightButton = () => {
+const PrimaryLightButton = ({text}) => {
     return (
-        <button className="primary-btn-light" style={{width: "100px"}}>Выйти</button>
+        <button className="primary-btn-light">{text}</button>
     );
 };
 

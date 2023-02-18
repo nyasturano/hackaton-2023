@@ -1,0 +1,24 @@
+.apartment-info {
+    padding: 20px;
+    border: 1px solid #78766C;
+    margin: 20px 0;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.another-info {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #8D8080;
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 768px){
+    .apartment-info {
+        width: 40%;
+        margin: 20px auto;
+    };
+    
+}
