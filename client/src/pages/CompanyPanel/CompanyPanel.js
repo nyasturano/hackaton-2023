@@ -16,15 +16,17 @@ const CompanyPanel = () => {
         <Panel>
             <PanelMenu>
                 <PanelMenuItem>ПРОФИЛЬ</PanelMenuItem>
-                <PanelMenuItem>ОБЪЯВЛЕНИЯ</PanelMenuItem>
-                <PanelMenuItem>МОЕ ЖИЛИЩЕ</PanelMenuItem>
-                <PanelMenuItem>ПОКАЗАНИЯ</PanelMenuItem>
-                <PanelMenuItem>ДОСТУП В ЖК</PanelMenuItem>
-                <PanelMenuItem>СОЗДАТЬ ОБРАЩЕНИЕ</PanelMenuItem>
+                <PanelMenuItem>ОБЪЕКТЫ</PanelMenuItem>
+                <PanelMenuItem>ОРГАНИЗАЦИИ</PanelMenuItem>
+                <PanelMenuItem>ПОДРЯДЧИКИ</PanelMenuItem>
+                <PanelMenuItem>УПРАВЛЕНИЕ</PanelMenuItem>
+                <PanelMenuItem>АВТОМАТИЗАЦИЯ</PanelMenuItem>
+                <PanelMenuItem>ОБРАЩЕНИЯ</PanelMenuItem>
+                <PanelMenuItem>СДЕЛАТЬ ОБЪЯВЛЕНИЯ</PanelMenuItem>
+                <PrimaryLightButton/>
             </PanelMenu>
 
             <PanelContent>
-                <PrimaryLightButton/>
             </PanelContent>
         </Panel>
     );

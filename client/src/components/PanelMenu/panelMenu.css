@@ -1,14 +1,20 @@
+.panel-menu-wrapper {
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
 .panel-menu {
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
 }
 
 .panel-menu button:first-child{
     border-radius: 10px 10px 0px 0px;
 }
 
-.panel-menu button:last-child{
+.panel-menu button:nth-last-child(2){
     border-radius: 0px 0px 10px 10px;
 }
 
@@ -18,10 +24,24 @@
 
 
 @media screen and (min-width: 768px) { 
+
+    .panel-menu-wrapper {
+        position: absolute;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        height: 100%;
+        margin-top: -100px;
+    }
+    
+    .panel-menu {
+        display: flex;
+        flex-direction: column;
+        padding-left: 30px;
+    }
+
     .panel-menu {
         margin: 0;
-        height: 100vh;
-        background: #2E4489;
         width: 300px;
     }
 }
