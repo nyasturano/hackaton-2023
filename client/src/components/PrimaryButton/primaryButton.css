@@ -1,0 +1,8 @@
+.primary-btn {
+    margin: 40px auto 20px auto;
+    height: 40px;
+    background-color: #4875FF;
+    border-radius: 40px;
+    border-width: 0;
+    color: white;
+}

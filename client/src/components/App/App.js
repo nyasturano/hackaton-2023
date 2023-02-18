@@ -1,13 +1,11 @@
 import './App.css';
-//import Login from '../../pages/Login/Login';
-//import Resident from '../../pages/Resident/Resident';
-//import Company from '../../pages/Company/Company';
-import NewPage from '../../pages/NewPage/NewPage';
+import Auth from '../../pages/Auth/Auth';
+import CompanyPanel from '../../pages/CompanyPanel/CompanyPanel';
 
 const App = () => {
   return (
     <div className='App'>
-      <NewPage/>
+      <Auth/>
     </div>
   );
 }

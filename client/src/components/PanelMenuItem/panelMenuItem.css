@@ -1,0 +1,29 @@
+.panel-menu button:active {
+    color: #9E125E;
+}
+
+.panel-menu button{
+    border: 1px solid #4875FF;
+    background-color: white;
+    padding: 20px;
+
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: #4875FF;
+}
+
+@media screen and (min-width: 768px) {
+    .panel-menu button{
+        background: #2E4489;
+        color: #FFFFFF;
+    }
+    .panel-menu button:first-child{
+        border-radius: 0;
+    }
+    
+    .panel-menu button:last-child{
+        border-radius: 0;
+    }
+}

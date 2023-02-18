@@ -1,0 +1,27 @@
+.panel-menu {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.panel-menu button:first-child{
+    border-radius: 10px 10px 0px 0px;
+}
+
+.panel-menu button:last-child{
+    border-radius: 0px 0px 10px 10px;
+}
+
+.panel-menu button:active {
+    color: #9E125E;
+}
+
+
+@media screen and (min-width: 768px) { 
+    .panel-menu {
+        margin: 0;
+        height: 100vh;
+        background: #2E4489;
+        width: 300px;
+    }
+}

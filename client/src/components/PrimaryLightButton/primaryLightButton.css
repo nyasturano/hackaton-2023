@@ -1,0 +1,10 @@
+.primary-btn-light {
+    margin: 40px auto 20px auto;
+    height: 40px;
+    background-color: #ffffff;
+    border-color: #4875FF;
+    border-radius: 40px;
+    border-width: 1px;
+    font-weight: bold;
+    color: #4875FF;
+}

@@ -1,0 +1,31 @@
+.panel {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+
+@media screen and (min-width: 768px)   {
+    .panel {
+        flex-direction: row;
+
+    }
+
+    .panel-block {
+        flex-grow: 4;
+    }
+
+    .site-pages-name {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    .site-pages-name button{
+        display: block;
+        margin-left: 10%;
+        margin-right: 20px;
+        padding: 10px 20px;
+    }
+}
