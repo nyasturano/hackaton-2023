@@ -1,0 +1,51 @@
+.site-menu {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+   
+
+}
+.site-menu button{
+    border: 1px solid #4875FF;
+    background-color: white;
+    padding: 20px;
+
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: #4875FF;
+}
+
+.site-menu button:first-child{
+    border-radius: 10px 10px 0px 0px;
+}
+
+.site-menu button:last-child{
+    border-radius: 0px 0px 10px 10px;
+}
+
+.site-menu button:active {
+    color: #9E125E;
+}
+
+@media screen and (min-width: 768px) { 
+    .site-menu {
+        flex-grow: 1;
+        margin: 0;
+        height: 100vh;
+        background: #2E4489;
+    }
+
+    .site-menu button{
+        background: #2E4489;
+        color: #FFFFFF;
+    }
+    .site-menu button:first-child{
+        border-radius: 0;
+    }
+    
+    .site-menu button:last-child{
+        border-radius: 0;
+    }
+}

@@ -1,0 +1,45 @@
+.form-reading {
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px;
+    background: #E0F4FF;
+    border-radius: 10px;
+
+    text-align: center;
+}
+
+.form-reading input {
+    background: #FFFFFF;
+    border: 2px solid #4875FF;
+    border-radius: 10px;
+    height: 30px;
+    width: 100%;
+    
+    margin: 5px auto 20px auto;
+   
+}
+
+.form-reading button {
+    background: #FFFFFF;
+border: 2px solid #4875FF;
+border-radius: 40px;
+width: 60%;
+margin: 40px auto 20px auto;
+padding: 5px;
+
+font-weight: 700;
+font-size: 14px;
+line-height: 24px;
+color: #4875FF;
+}
+
+
+@media screen and (min-width: 768px) {  
+    form-reading{
+        max-width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
