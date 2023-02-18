@@ -2,7 +2,7 @@ import './automatization.css';
 
 const Automatization = () => {
     return(<div>
-        ОБЪЕКТЫ
+        АВТОМАТИЗАЦИЯ
     </div>);
 }
 
