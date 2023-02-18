@@ -48,8 +48,7 @@ class userController {
     }
 
     const token = generateJwt(user.id, login, user.role)
-    return res.json({token})
-    
+    return res.json({token, role: user.role})
   }
 
   async delete(req, res) {
@@ -57,10 +56,11 @@ class userController {
   }
 
 
-  async check(req, res) {
+  async auth(req, res) {
     const token = generateJwt(req.user.id, req.user.login, req.user.role)
-    return res.json({token})
+    return res.json({token, role: req.user.role})
   }
+
 }
 
 module.exports = new userController();
