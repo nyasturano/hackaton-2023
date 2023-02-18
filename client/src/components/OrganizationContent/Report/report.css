@@ -1,0 +1,16 @@
+.report {   
+    padding: 20px;
+    border: 2px solid #4875FF;
+    border-radius: 10px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+@media screen and (min-width: 768px){
+    .report {
+        width: 40%;
+        margin: 20px auto;
+    }
+};

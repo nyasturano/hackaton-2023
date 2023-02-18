@@ -1,0 +1,16 @@
+.meter-readings {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .readings {
+        width: 60%;
+    }
+    .meter-readings {
+        flex-direction: row;
+        align-items: center;
+    }
+    
+}
