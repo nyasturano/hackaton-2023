@@ -7,8 +7,11 @@ import './App.css';
 import ChequeInfo from '../ResidentContent/ChequeInfo/ChequeInfo';
 const App = () => {
   return (
-    <div>
-      <ChequeInfo/>
+    <div className="App">
+      <Routes>
+          <Route path="/" element={<Auth/>}/>
+          <Route path="/admin/*" element={<CompanyPanel/>}/>
+      </Routes>
     </div>
   );
 

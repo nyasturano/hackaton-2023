@@ -1,4 +1,4 @@
-.panel-menu button:active {
+.panel-menu .active button {
     color: #9E125E;
 }
 
@@ -12,4 +12,5 @@
     line-height: 15px;
     text-align: center;
     color: #4875FF;
+    width: 100%;
 }
