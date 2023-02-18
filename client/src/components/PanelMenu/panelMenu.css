@@ -10,11 +10,11 @@
     flex-direction: column;
 }
 
-.panel-menu button:first-child{
+.panel-menu .panel-menu-item:first-child button{
     border-radius: 10px 10px 0px 0px;
 }
 
-.panel-menu button:nth-last-child(2){
+.panel-menu .panel-menu-item:nth-last-child(2) button{
     border-radius: 0px 0px 10px 10px;
 }
 

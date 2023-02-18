@@ -1,8 +1,11 @@
+import { NavLink } from 'react-router-dom';
 import './panelMenuItem.css';
 
-const PanelMenuItem = ({children}) => {
+const PanelMenuItem = ({path, children}) => {
     return(
-        <button>{children}</button>
+        <NavLink activeClassName="active" className="panel-menu-item" to={path}>
+            <button>{children}</button>
+        </NavLink>
     );
 }
 

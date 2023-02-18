@@ -1,11 +1,25 @@
-
 table {
     border-collapse: collapse;
     text-align: center;
+    margin: 0 auto;
+}
+
+.table-warning {
+   display: flex;
+   flex-flow: row nowrap;
+   justify-content: center;
+   font-weight: bold;
+}
+
+table thead {
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 th, td {
     border: 1px solid #89A6FF;
+    box-sizing: border-box;
+    padding: 15px;
 }
 
 

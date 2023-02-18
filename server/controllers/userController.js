@@ -61,6 +61,11 @@ class userController {
     return res.json({token, role: req.user.role})
   }
 
+  async getAll(req, res) {
+    const user = await User.findAll();
+    return res.json(user)
+  }
+
 }
 
 module.exports = new userController();
