@@ -1,5 +1,6 @@
 import './apartmentInfo.css';
 
+
 const ApartmentInfo = () => {
     return (
         <div className='apartment-info'>
