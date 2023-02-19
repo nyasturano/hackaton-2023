@@ -1,11 +1,13 @@
 table {
+    padding-top: 60px;
     border-collapse: collapse;
     text-align: center;
     margin: 0 auto;
 }
 
 .table-warning {
-   display: flex;
+    padding-top: 60px;
+    display: flex;
    flex-flow: row nowrap;
    justify-content: center;
    font-weight: bold;

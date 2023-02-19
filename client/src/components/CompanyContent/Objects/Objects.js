@@ -19,9 +19,9 @@ const Objects = () => {
     }, []);
 
 
-    return (<div>
+    return (<div className="objects-wrapper">
         <Link to="reg">
-             <PrimaryLightButton text={<div style={{width: '200px'}}>Зарегистрировать объект</div>}/>
+             <PrimaryLightButton text={<div style={{width: '200px'}}>ЗАРЕГИСТРИРОВАТЬ ОБЪЕКТ</div>}/>
         </Link>
         <Table json={json}/>
     </div>);

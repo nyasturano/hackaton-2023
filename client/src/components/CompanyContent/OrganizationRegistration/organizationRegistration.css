@@ -1,3 +1,22 @@
-.org-reg-wrapper {
-    max-width: 600px;
+.org-reg-wrapper div {
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.org-reg-wrapper div {
+    width: 100%;
+}
+
+
+.org-reg-wrapper button {
+    padding: 20px;
+}
+
+
+@media screen and (min-width: 768px) {
+    .org-reg-wrapper div {
+        width: 400px;
+    }
 }

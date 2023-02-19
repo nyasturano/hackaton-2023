@@ -12,11 +12,13 @@ const OrganizationRegistration = () => {
 
     return (
         <div className="org-reg-wrapper">
-            <Input fieldName={"ID ОБЪЕКТА"} inputHook={id}/>
-            <Input fieldName={"НАИМЕНОВАНИЕ"} inputHook={name}/>
-            <Input fieldName={"ИНН"} inputHook={inn}/>
-            <Input fieldName={"ОГРН"} inputHook={ogrn}/>
-            <PrimaryButton text={"Зарегистрировать объект"}/>
+            <div>
+                <Input fieldName={"ID ОБЪЕКТА"} inputHook={id}/>
+                <Input fieldName={"НАИМЕНОВАНИЕ"} inputHook={name}/>
+                <Input fieldName={"ИНН"} inputHook={inn}/>
+                <Input fieldName={"ОГРН"} inputHook={ogrn}/>
+                <PrimaryButton text={"ЗАРЕГИСТРИРОВАТЬ"}/>
+            </div>
         </div>
     );
 

@@ -1,3 +1,22 @@
-.object-reg-wrapper {
-    max-width: 600px;
+.object-reg-wrapper div {
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.object-reg-wrapper div {
+    width: 100%;
+}
+
+
+.object-reg-wrapper button {
+    padding: 20px;
+}
+
+
+@media screen and (min-width: 768px) {
+    .object-reg-wrapper div {
+        width: 400px;
+    }
 }

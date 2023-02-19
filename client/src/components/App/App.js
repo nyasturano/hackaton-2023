@@ -1,8 +1,8 @@
 
 import './App.css';
 import Auth from '../../pages/Auth/Auth';
-import CompanyPanel from '../../pages/CompanyPanel/CompanyPanel';
 import { Routes, Route } from 'react-router';
+import CompanyPanel from '../../pages/CompanyPanel/CompanyPanel';
 import ResidentPanel from '../../pages/ResidentPanel/ResidentPanel';
 
 const App = () => {

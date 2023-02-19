@@ -1,10 +1,9 @@
 .primary-btn-light {
     box-sizing: border-box;
-    margin: 20px auto;
     background-color: #ffffff;
     border-color: #4875FF;
     border-radius: 40px;
-    border-width: 1px;
+    border-width: 2px;
     font-weight: bold;
     color: #4875FF;
     padding: 20px;

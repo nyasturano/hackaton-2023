@@ -17,9 +17,11 @@ const ObjectRegistration = () => {
 
     return (
         <div className="object-reg-wrapper">
-            <Input fieldName={"АДРЕС"} inputHook={addres}/>
-            <Input fieldName={"ТИП"} inputHook={type}/>
-            <PrimaryButton text={"Зарегистрировать объект"} click={create}/>
+            <div>
+                <Input fieldName={"АДРЕС"} inputHook={addres}/>
+                <Input fieldName={"ТИП"} inputHook={type}/>
+                <PrimaryButton text={"ЗАРЕГИСТРИРОВАТЬ"} click={create}/>
+            </div>
         </div>
     );
 

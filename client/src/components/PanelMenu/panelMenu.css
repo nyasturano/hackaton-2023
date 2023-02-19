@@ -1,5 +1,6 @@
 .panel-menu-wrapper {
     flex-basis: 320px;
+    flex-shrink: 0;
 }
 
 .panel-menu {

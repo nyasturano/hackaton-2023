@@ -16,9 +16,9 @@ const Organizations= () => {
         //setjson
     }, []);
 
-    return (<div>
+    return (<div className="org-wrapper">
         <Link to="reg">
-             <PrimaryLightButton text={<div style={{width: '200px'}}>Зарегистрировать организацию</div>}/>
+             <PrimaryLightButton text={<div style={{width: '200px'}}>ЗАРЕГИСТРИРОВАТЬ ОРГАНИЗАЦИЮ</div>}/>
         </Link>
         <Table json={json}/>
     </div>);
