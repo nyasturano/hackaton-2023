@@ -1,11 +1,11 @@
-const {Organization} = require('../models/models')
+const {Anouncment} = require('../models/models')
 
-class organizationController {
+class anouncmentController {
     async registration(req, res, next) {
         try {
-            const {inn, ogrn, objectId} = req.body    
-            const object = await Organization.create({inn:inn, ogrn:ogrn, objectId:objectId})
-            return res.status(200).json(object);
+            const {title, text, date} = req.body    
+            const anouncment = await Anouncment.create({title, text, date})
+            return res.status(200).json(anouncment);
         } catch (error) {
             return res.status(500).send(error.message);
         }   
@@ -14,7 +14,7 @@ class organizationController {
     async delete(req, res) {
         try {
             const {id} = req.body    
-            const count = await Organization.destroy({where:{id: id}})
+            const count = await Anouncment.destroy({where:{id: id}})
             return res.status(200).json({deleted: count});
         } catch (error) {
             return res.status(500).send(error.message);
@@ -23,8 +23,8 @@ class organizationController {
 
     async getAll(req, res) {
         try {
-            const organizations = await Organization.findAll();
-            return res.status(200).json(organizations);
+            const anouncment = await Anouncment.findAll();
+            return res.status(200).json(anouncment);
         } catch (error) {
             return res.status(500).send(error.message);
         }
@@ -32,12 +32,12 @@ class organizationController {
 
     async getOne(req, res) {
         try {
-            const organization = await Organization.findOne({where: {id:req.params.id}})
-            return res.status(200).json(organization)
+            const anouncment = await Anouncment.findOne({where: {id:req.params.id}})
+            return res.status(200).json(anouncment)
         } catch (error) {
             return res.status(500).send(error.message)
         }
     }
 }
 
-module.exports = new organizationController();
+module.exports = new anouncmentController();

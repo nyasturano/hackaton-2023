@@ -1,5 +1,8 @@
-table {
+.table {
     padding-top: 60px;
+}
+
+table {
     border-collapse: collapse;
     text-align: center;
     margin: 0 auto;

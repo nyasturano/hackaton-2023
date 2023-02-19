@@ -14,7 +14,7 @@ const Objects = () => {
 
     useEffect(() => {
         request(
-            "http://localhost:5000/api/object"
+            "http://localhost:5000/api/object/", 'GET'
         ).then(obj => setJson(obj));
     }, []);
 

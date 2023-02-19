@@ -6,19 +6,20 @@ import { useHttp } from '../../../hooks/http.hook';
 
 const ObjectRegistration = () => {
 
-    const addres = useInput();
+    const address = useInput();
     const type = useInput();
     const {request} = useHttp();
 
     const create = () => {
-        request('http://localhost:5000/api/object', 'POST', {addres: addres.value, type: type.value})
-            .then(obj => {addres.clear(); type.clear()});
+  
+        request('http://localhost:5000/api/object/registration', 'POST', {"address": address.value, "type": type.value})
+            .then(obj => {address.clear(); type.clear()});
     }
 
     return (
         <div className="object-reg-wrapper">
             <div>
-                <Input fieldName={"АДРЕС"} inputHook={addres}/>
+                <Input fieldName={"АДРЕС"} inputHook={address}/>
                 <Input fieldName={"ТИП"} inputHook={type}/>
                 <PrimaryButton text={"ЗАРЕГИСТРИРОВАТЬ"} click={create}/>
             </div>

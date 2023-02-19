@@ -1,11 +1,13 @@
 const organizationController = require('../controllers/organizationController')
+const checkRole = require('../middleware/checkRoleMiddleware')
 
 const Router = require('express')
 const router = new Router()
 
-router.get('/:id', organizationController.getOne)
-router.post('/', organizationController.create)
+// ограничение доступа под вопросом
+router.post('/registration', checkRole('ADMIN'), organizationController.registration)
+router.delete('/',checkRole('ADMIN'), organizationController.delete)
 router.get('/', organizationController.getAll)
-router.delete('/', organizationController.delete)
+router.get('/:id', organizationController.getOne)
 
 module.exports = router;

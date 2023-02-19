@@ -22,7 +22,7 @@ const Table = ({json}) => {
     //     }
     // ];
 
-    if (!json || !json.count) {
+    if (!json || json.count === 0) {
         return <div className="table-warning">В таблице еще нет записей</div>
     }
     
@@ -32,17 +32,23 @@ const Table = ({json}) => {
         );
     });
 
+    columns.pop();
+    columns.pop();
+
     let rows = json.map((obj, index) => {
         const row = Object.values(obj).map((value, index) => {
             if (!index) {
                 return <td key={index}>
-                    <Link to={value}>
+                    <Link to="object">
+                        {value}
                     </Link>
                 </td>;
             } else {
                 return <td key={index}>{value}</td>;
             }
         });
+        row.pop();
+        row.pop();
         return <tr key={index}>{row}</tr>;
     });
 

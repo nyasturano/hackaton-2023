@@ -1,21 +1,20 @@
-const {Object} = require('../models/models')
+const {Facility} = require('../models/models')
 
-class objectController {
-
-    async registration(req, res) {
+class facilityController {
+    async registration(req, res, next) {
         try {
-            const {address, type} = req.body    
-            const object = await Object.create({address, type})
-            return res.status(200).json(object);
+            const {name} = req.body    
+            const facility = await Facility.create({name})
+            return res.status(200).json(facility);
         } catch (error) {
             return res.status(500).send(error.message);
         }   
-    }
+      }
 
     async delete(req, res) {
         try {
             const {id} = req.body    
-            const count = await Object.destroy({where:{id: id}})
+            const count = await Facility.destroy({where:{id: id}})
             return res.status(200).json({deleted: count});
         } catch (error) {
             return res.status(500).send(error.message);
@@ -24,8 +23,8 @@ class objectController {
 
     async getAll(req, res) {
         try {
-            const objects = await Object.findAll();
-            return res.status(200).json(objects);
+            const facility = await Facility.findAll();
+            return res.status(200).json(facility);
         } catch (error) {
             return res.status(500).send(error.message);
         }
@@ -33,12 +32,12 @@ class objectController {
 
     async getOne(req, res) {
         try {
-            const object = await Object.findOne({where: {id:req.params.id}})
-            return res.status(200).json(object)
+            const facility = await Facility.findOne({where: {id:req.params.id}})
+            return res.status(200).json(facility)
         } catch (error) {
             return res.status(500).send(error.message)
         }
     }
 }
 
-module.exports = new objectController();
+module.exports = new facilityController();
