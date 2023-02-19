@@ -5,6 +5,7 @@ import PanelMenuItem from "../../components/PanelMenuItem/PanelMenuItem";
 import PanelContent from '../../components/PanelContent/PanelContent'
 import PrimaryButton from "../../components/PrimaryButton/PrimaryButton";
 import { Routes, Route } from "react-router";
+import Profile from '../../components/Profile/Profile';
 
 const ContractorPanel = () => {
 
@@ -14,11 +15,11 @@ const ContractorPanel = () => {
                 <PanelMenuItem path="profile">ПРОФИЛЬ</PanelMenuItem>
                 <PanelMenuItem path="announcement">ОБЪЯВЛЕНИЯ</PanelMenuItem>
                 <PanelMenuItem path="projects">ПРОЕКТЫ</PanelMenuItem>
-                <PrimaryButton text={<div style={{margin: '0px 30px'}}>Выйти</div>}/>
             </PanelMenu>
 
             <PanelContent>
                 <Routes>
+                    <Route path="/profile" element={<Profile role="ПОДРЯДЧИК"/>}/>
                    
                 </Routes>
             </PanelContent>

@@ -1,0 +1,21 @@
+.profile {
+    margin-top: 50px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.profile span {
+    font-weight: bold;
+    color: #c02e7f;
+    margin-left: 15px;
+}
+
+.profile div {
+    font-weight: bold;
+}
+
+.profile button {
+    margin-top: 20px;
+    padding: 15px;
+}

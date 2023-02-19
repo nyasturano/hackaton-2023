@@ -13,9 +13,7 @@ import Appeals from '../../components/CompanyContent/Appeals/Appeals'
 import Announcement from '../../components/CompanyContent/Announcement/Announcement'
 import ObjectRegistration from '../../components/CompanyContent/ObjectRegistration/ObjectRegistration';
 import OrganizationRegistration from '../../components/CompanyContent/OrganizationRegistration/OrganizationRegistration';
-
-
-
+import Profile from '../../components/Profile/Profile';
 const CompanyPanel = () => {
     return (
         <Panel>
@@ -28,11 +26,12 @@ const CompanyPanel = () => {
                 <PanelMenuItem path="automatization">АВТОМАТИЗАЦИЯ</PanelMenuItem>
                 <PanelMenuItem path="appeals">ОБРАЩЕНИЯ</PanelMenuItem>
                 <PanelMenuItem path="announcement">СДЕЛАТЬ ОБЪЯВЛЕНИЕ</PanelMenuItem>
-                <PrimaryButton text={<div style={{margin: '0px 30px'}}>Выйти</div>}/>
+                {/* <PrimaryButton text={<div style={{margin: '0px 30px'}}>Выйти</div>}/> */}
             </PanelMenu>
 
             <PanelContent>
                 <Routes>
+                    <Route path="/profile" element={<Profile role="УПРАВЛЯЮЩАЯ КОМПАНИЯ"/>}/>
                     <Route path="/organizations" element={<Organizations/>}/>
                     <Route path="/organizations/reg" element={<OrganizationRegistration/>}/>
                     <Route path="/objects" element={<Objects/>}/>
