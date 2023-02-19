@@ -11,10 +11,13 @@ const Objects = () => {
     const [json, setJson] = useState();
 
     const {request} = useHttp();
+
     useEffect(() => {
-        //request
-        //setjson
+        request(
+            "http://localhost:5000/api/object"
+        ).then(obj => setJson(obj));
     }, []);
+
 
     return (<div>
         <Link to="reg">

@@ -1,47 +1,19 @@
 .panel-menu-wrapper {
-    position: relative;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
+    flex-basis: 320px;
 }
 
 .panel-menu {
     display: flex;
+    position: relative;
     flex-direction: column;
+    background: #2E3549;
 }
 
-.panel-menu .panel-menu-item:first-child button{
-    border-radius: 10px 10px 0px 0px;
-}
-
-.panel-menu .panel-menu-item:nth-last-child(2) button{
-    border-radius: 0px 0px 10px 10px;
-}
-
-.panel-menu button:active {
-    color: #9E125E;
-}
-
-
-@media screen and (min-width: 768px) { 
-
-    .panel-menu-wrapper {
-        position: absolute;
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
-        height: 100%;
-        margin-top: -100px;
-    }
-    
+@media screen and (min-width: 768px) {
     .panel-menu {
-        display: flex;
-        flex-direction: column;
-        padding-left: 30px;
-    }
+        position: fixed;
+        width: 320px;
+        height: 100vh;
 
-    .panel-menu {
-        margin: 0;
-        width: 300px;
     }
 }

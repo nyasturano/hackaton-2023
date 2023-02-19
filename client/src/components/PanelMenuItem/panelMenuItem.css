@@ -1,16 +1,18 @@
 .panel-menu .active button {
-    color: #9E125E;
+    color: #c02e7f;
 }
 
 .panel-menu button{
-    border: 1px solid #4875FF;
-    background-color: white;
-    padding: 20px;
-
+    width: 100%;
     font-weight: 700;
     font-size: 12px;
     line-height: 15px;
     text-align: center;
-    color: #4875FF;
-    width: 100%;
+    background: #2E3549;
+    color: #FFFFFF;
+    border: 2px solid #7D818B;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 20px;
+    outline: none;
 }

@@ -17,8 +17,7 @@ import OrganizationRegistration from '../../components/CompanyContent/Organizati
 
 
 const CompanyPanel = () => {
-
-    return(
+    return (
         <Panel>
             <PanelMenu>
                 <PanelMenuItem path="profile">ПРОФИЛЬ</PanelMenuItem>
