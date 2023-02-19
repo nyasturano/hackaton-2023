@@ -1,14 +1,14 @@
 import './residentPanel.css'
 
 import MeterReadings from '../../components/ResidentContent/Meter/MeterReadings';
-import ChequeInfo from '../../components/ResidentContent/ChequeInfo/ChequeInfo';
+import MyApartment from '../../components/ResidentContent/MyApartment/MyApartment';
 import Appeal from '../../components/ResidentContent/Appeal/Appeal';
-import ApartmentInfo from '../../components/ResidentContent/ApartmentInfo/ApartmentInfo';
 import Panel from '../../components/Panel/Panel'
 import PanelMenu from "../../components/PanelMenu/PanelMenu";
 import PanelMenuItem from "../../components/PanelMenuItem/PanelMenuItem";
 import PanelContent from '../../components/PanelContent/PanelContent'
 import PrimaryButton from "../../components/PrimaryButton/PrimaryButton";
+import Announcement from '../../components/ResidentContent/Announcement/Announcement';
 import { Routes, Route } from "react-router";
 
 const ResidentPanel = () => {
@@ -28,8 +28,8 @@ const ResidentPanel = () => {
             <Routes>
                 <Route path="/appeal" element={<Appeal/>}/>
                 <Route path="/meterReadings" element={<MeterReadings/>}/>
-                <Route path="/myApartment" element={<ChequeInfo/>}/>
-                <Route path="/myApartment" element={<ApartmentInfo/>}/>
+                <Route path="/myApartment" element={<MyApartment/>}/>
+                <Route path="/announcement" element={<Announcement/>}/>
             </Routes>
         </PanelContent>
     </Panel>
