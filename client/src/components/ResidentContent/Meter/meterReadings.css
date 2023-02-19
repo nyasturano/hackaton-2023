@@ -2,6 +2,9 @@
     display: flex;
     flex-direction: column;
     margin: 20px;
+    border: 1px solid #78766C;
+    border-radius: 10px;
+    padding: 20px;
 }
 
 @media screen and (min-width: 768px) {
@@ -9,8 +12,12 @@
         width: 100%;
     }
     .meter-readings {
-        flex-direction: row;
+        width: 30%;
         align-items: center;
+        padding: 50px 100px;
+        margin: auto;
     }
+
+
     
 }
