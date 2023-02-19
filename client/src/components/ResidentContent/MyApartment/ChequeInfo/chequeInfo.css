@@ -10,7 +10,6 @@
 
 @media screen and (min-width: 768px){
     .cheque-info {
-        width: 40%;
         margin: 20px auto;
     }
 };

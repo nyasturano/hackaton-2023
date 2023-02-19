@@ -1,0 +1,25 @@
+.announcement {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid #78766C;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.announcement .name{
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 51px;
+}
+.announcement .date{
+    opacity: 0.7;
+    margin: 10px 0;
+}
+
+@media screen {
+    .announcement {
+        width: 70%;
+        margin: 20px auto;
+    }
+}

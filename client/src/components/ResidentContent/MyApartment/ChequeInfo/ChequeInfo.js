@@ -1,6 +1,6 @@
 import './chequeInfo.css';
 import Icon from './clip.png';
-import PrimaryLightButton from '../../PrimaryLightButton/PrimaryLightButton';
+import PrimaryLightButton from '../../../PrimaryLightButton/PrimaryLightButton';
 
 const ChequeInfo = () => {
     return (
