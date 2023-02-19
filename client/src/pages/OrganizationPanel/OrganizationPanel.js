@@ -1,9 +1,17 @@
 import './organizationPanel.css';
 
 import Report from '../../components/OrganizationContent/Report/Report'
+import Panel from '../../components/Panel/Panel'
+import PanelMenu from "../../components/PanelMenu/PanelMenu";
+import PanelMenuItem from "../../components/PanelMenuItem/PanelMenuItem";
+import PanelContent from '../../components/PanelContent/PanelContent'
+import PrimaryButton from "../../components/PrimaryButton/PrimaryButton";
+import { Routes, Route } from "react-router";
+
 
 const OrganizationPanel = () => {
-    <Panel>
+    return (
+        <Panel>
         <PanelMenu>
             <PanelMenuItem path="profile">ПРОФИЛЬ</PanelMenuItem>
             <PanelMenuItem path="report">ОТЧЁТ</PanelMenuItem>
@@ -16,6 +24,7 @@ const OrganizationPanel = () => {
             </Routes>
         </PanelContent>
     </Panel>
+    );
 }
 
 export default OrganizationPanel;

@@ -1,4 +1,10 @@
 import './contractorPanel.css';
+import Panel from '../../components/Panel/Panel'
+import PanelMenu from "../../components/PanelMenu/PanelMenu";
+import PanelMenuItem from "../../components/PanelMenuItem/PanelMenuItem";
+import PanelContent from '../../components/PanelContent/PanelContent'
+import PrimaryButton from "../../components/PrimaryButton/PrimaryButton";
+import { Routes, Route } from "react-router";
 
 const ContractorPanel = () => {
 
